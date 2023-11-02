@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    {% include 'partials/menu.html' %}
+
+    <div class="container car-details">
+        <div class="card">
+            <img src="carro1.jpg" class="card-img-top" alt="Carro 1">
+            <div class="card-body">
+                <h5 class="card-title">Carro 1</h5>
+                <p class="card-text">Descrição do Carro 1. Este é um carro incrível com muitos recursos. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="card-text">Ano: 2023</p>
+                <p class="card-text">Preço: R$ 50,000</p>
+                <div class="seller-info">
+                    <h5>Informações do Vendedor</h5>
+                    <p>Nome do Vendedor: João da Silva</p>
+                    <p>Localização do Vendedor: Cidade, Estado</p>
+                    <p>Contato do Vendedor: joao@email.com</p>
+                </div>
+                <div class="contact-seller">
+                    <a href="mailto:joao@email.com" class="btn btn-primary">Contatar o Vendedor</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

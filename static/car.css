@@ -1,0 +1,58 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.navbar {
+    background-color: #1e90ff;
+}
+
+.navbar a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu .active {
+    color: #007bff;
+}
+
+.card {
+    margin: 10px;
+}
+
+.container-contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.car-details {
+    margin: 20px;
+}
+
+.seller-info {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+}
+
+.contact-seller {
+    text-align: center;
+}

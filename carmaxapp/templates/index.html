@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    {% include "partials/menu.html" %}
+
+    <main role="main" class="container mt-4">
+        <section>
+            <h1>Carros Disponíveis</h1>
+            <div class="row">
+                <article class="col-md-4">
+                    <div class="card">
+                        <img src="{% static 'img/logo.png' %}" class="card-img-top" alt="Carro 1">
+                        <div class="card-body">
+                            <h2 class="card-title">Carro 1</h2>
+                            <p class="card-text">Descrição do Carro 1. Este é um carro incrível com muitos recursos. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="card-text">Ano: 2023</p>
+                            <p class="card-text">Preço: R$ 50,000</p>
+                            <a href="{% url 'car' %}" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mt-4">Contato</h2>
+            <div class="row">
+                <article class="col-md-6">
+                    <h3>Entre em Contato</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem:</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </article>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

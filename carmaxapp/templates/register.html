@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    {% include 'partials/menu.html' %}
+    
+    <div class="container form-container">
+        <h2>Anunciar Seu Carro</h2>
+        <form>
+            <div class="form-group">
+                <label for="carMake">Marca do Carro:</label>
+                <input type="text" class="form-control" id="carMake" placeholder="Marca do carro">
+            </div>
+            <div class="form-group">
+                <label for="carModel">Modelo do Carro:</label>
+                <input type="text" class="form-control" id="carModel" placeholder="Modelo do carro">
+            </div>
+            <div class="form-group">
+                <label for="carYear">Ano do Carro:</label>
+                <input type="text" class="form-control" id="carYear" placeholder="Ano do carro">
+            </div>
+            <div class="form-group">
+                <label for="carPrice">Preço do Carro:</label>
+                <input type="text" class="form-control" id="carPrice" placeholder="Preço do carro">
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Seu E-mail de Contato:</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="Seu e-mail de contato">
+            </div>
+            <button type="submit" class="btn btn-primary">Anunciar</button>
+        </form>
+    </div>
+
+{% endblock %}

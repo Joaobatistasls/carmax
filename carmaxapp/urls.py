@@ -5,5 +5,7 @@ from . import views
 
 # creating my default urls
 urlpatterns = [
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    path('register', views.register, name='register'),
+    path('car', views.car, name='car')
 ]
