@@ -8,11 +8,12 @@
         <section>
             <h1>Carros Disponíveis</h1>
             <div class="row">
+                {% for key, value in car_models.items%}
                 <article class="col-md-4">
                     <div class="card">
                         <img src="{% static 'img/logo.png' %}" class="card-img-top" alt="Carro 1">
                         <div class="card-body">
-                            <h2 class="card-title">Carro 1</h2>
+                            <h2 class="card-title">{{ value }}</h2>
                             <p class="card-text">Descrição do Carro 1. Este é um carro incrível com muitos recursos. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <p class="card-text">Ano: 2023</p>
                             <p class="card-text">Preço: R$ 50,000</p>
@@ -20,6 +21,7 @@
                         </div>
                     </div>
                 </article>
+                {% endfor %}
             </div>
         </section>
     </main>
