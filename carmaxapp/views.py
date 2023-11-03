@@ -16,7 +16,7 @@ def index(request):
     return render(request, 'index.html', dates)
 
 # creating my route register
-def register(request):
+def registercar(request):
     return render(request, 'register.html')
 
 # creating my route car
